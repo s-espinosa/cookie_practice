@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CookiePractice</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <% if cookies[:message] %>
+      <%= cookies[:message] %>
+    <% end %>
+    <% if flash[:error] %>
+      <%= flash[:error] %>
+    <% end %>
+    <% if session[:message] %>
+      <%= session[:message] %>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>
