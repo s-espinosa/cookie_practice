@@ -1,5 +1,8 @@
 class HorsesController < ApplicationController
   def index
+    # cookies[:message] = "It's a cookie!"
+    # session[:message] = "It's a session!"
+    # flash[:message]   = "It's a flash!"
     @horses = Horse.all
   end
 
