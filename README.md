@@ -26,7 +26,7 @@ Review the following files:
 
 ### Explore the Site
 
-Fire up your server with `rails server`, and visit the horses index at `127.0.0.1:3000/horses`. Be sure to check the values available in EditThisCookie as you complete the exercises below.
+Fire up your server with `rails server`, and visit the horses index at `127.0.0.1:3000/horses`. Write down the differences you discover between sessions, cookies, and flashes as you complete the exercises below. Be sure to check the values available in EditThisCookie to help your understanding.
 
 * Uncomment and comment out the different lines in the `#index` action on the `HorsesController` while reloading the horses index. What does each seem to do?
 * Visit `/horses/1`, and try passing different parameters based on the values you see in the `HorsesController` using query params. For example, you might first visit:
@@ -36,4 +36,4 @@ Fire up your server with `rails server`, and visit the horses index at `127.0.0.
 ```
 
 * Try to visit each one a few times in a row to see what flash message displays. Can you come up with any rules regarding the difference between `flash.now` and `flash`, andd their relationship to `render`/`redirect_to`?
-* Write down the rules for sessions, cookies, and flashes, as you understand them based on your exploration.
+* Review the differences between sessions, cookies, and flashes that you discovered based on your exploration.
